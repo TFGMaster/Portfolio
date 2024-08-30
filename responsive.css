@@ -1,0 +1,267 @@
+/* All Responsive Design */
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 1024px) {
+
+    .nav,
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feld li a {
+        font-size: 20px;
+    }
+
+    .right-sec img {
+        width: 450px;
+        height: 500px;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .feld {
+        display: none;
+        background-color: #4b4b4b72;
+        border-radius: 2px;
+    }
+
+    .feld li {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px 20px;
+    }
+
+    .feld li a {
+        font-size: 24px;
+        text-align: right;
+    }
+
+    .hero {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .left-sec h2 {
+        font-size: 28px;
+    }
+
+    .left-sec h1 {
+        font-size: 48px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+    .cv-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .right-sec img {
+        width: 350px;
+        height: 400px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        color: #1EDA02;
+        position: absolute;
+        right: 20px;
+        top: 4px;
+    }
+
+    .hamburger.active {
+        color: #FFFFFF;
+        /* Change the color when active */
+    }
+
+}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 480px) {
+    .hed {
+        font-size: 28px;
+    }
+
+    .left-sec h2 {
+        font-size: 24px;
+    }
+
+    .left-sec h1 {
+        font-size: 36px;
+    }
+
+    .cv-btn {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+/*------------------------------------------------- responsive styling for About me----------------------------------- */
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 1024px) {
+    .aboutme{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        text-align: center;
+    }
+
+    .aboutme img{
+        width: 400px;
+        height: 450px;
+    }
+
+    .about-info h2{
+        font-size: 48px;
+    }
+
+    .about-info p {
+        font-size: 20px;
+        }
+}
+
+/* small mobile screen */
+@media screen and (max-width: 480px){
+    .about-info h2{
+        font-size: 40px;
+    }
+
+    .about-info p {
+        font-size: 16px;
+        }
+}
+
+/*------------------------------------------------- responsive styling for Skills section----------------------------------- */
+
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .skill p {
+        font-size: 20px;
+        font-weight:600;
+    }
+    
+    .skill span {
+        font-size: 12px;
+    }
+
+    .uiux, .web {
+        width: 90%;
+        height: auto;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+.uiux, .web {
+    width:85%;
+    height: auto;
+}
+}
+
+/* ------------------------------------------- responsive services css-------------------------------------------- */
+@media (max-width: 768px){
+    .serv-cart {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .serv-cart{
+        padding-bottom: 28px;
+    }
+}
+
+/* ------------------------------------------- responsive project css-------------------------------------------- */
+@media (max-width: 768px){
+.pro-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container{
+    width: 384px;
+}
+}
+
+/* -------------------------------------------responsive contact sec css-------------------------------------------- */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 80%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .input-group input {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    textarea {
+        font-size: 18px;
+        padding: 14px;
+        width: 100%;
+    }
+
+    .submit-btn {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .input-group input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
