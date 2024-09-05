@@ -199,8 +199,9 @@
 
     <!-------------------------------------------------- Contact section -------------------------------------------------->
 
-    <section  id="contact" class="contact">
+       <section id="contact" class="contact">
         <h1>Contact <span>Me</span></h1>
+        <p id="message"></p> 
         <div class="contact-container">
             <form class="contact-form">
                 <div class="input-group">
@@ -208,14 +209,24 @@
                     <input type="text" placeholder="Last name" required>
                 </div>
                 <div class="input-group">
-                    <input type="text" placeholder="Mob Num" required>
-                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Mobile Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">                    <input type="email" placeholder="Email" required>
                 </div>
                 <textarea placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="submit-btn">
+                <input type="submit" value="Send Message" id="submit-btn" class="submit-btn">
             </form>
         </div>
     </section>
+
+<script>
+    const form = document.querySelector('.contact-form');
+const submitBtn = document.querySelector('#submit-btn');
+const messageElement = document.querySelector('#message');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+    messageElement.textContent = '"Note: This is a demo form. To contact me, please use my email or phone number provided above."'; // display the message
+});
+</script>
 
 
     <script src="advance.js"></script>
