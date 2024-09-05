@@ -631,3 +631,9 @@ textarea::placeholder {
 .submit-btn:hover {
     background-color: #16a650;
 }
+
+#message{
+    color: rgb(234, 234, 234);
+    font-size: 24px;
+    font-weight: 500;
+}
